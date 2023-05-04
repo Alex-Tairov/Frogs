@@ -52,7 +52,7 @@
             this.restartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.restartButton.Location = new System.Drawing.Point(36, 250);
             this.restartButton.Name = "restartButton";
-            this.restartButton.Size = new System.Drawing.Size(75, 34);
+            this.restartButton.Size = new System.Drawing.Size(92, 34);
             this.restartButton.TabIndex = 2;
             this.restartButton.Text = "Заново";
             this.restartButton.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.exitButton.Location = new System.Drawing.Point(161, 250);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 34);
+            this.exitButton.Size = new System.Drawing.Size(90, 34);
             this.exitButton.TabIndex = 3;
             this.exitButton.Text = "Выход";
             this.exitButton.UseVisualStyleBackColor = true;
