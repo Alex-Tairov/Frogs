@@ -72,7 +72,7 @@
             this.bestUserDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
             this.Column4});
-            this.bestUserDataGridView.Location = new System.Drawing.Point(628, 12);
+            this.bestUserDataGridView.Location = new System.Drawing.Point(499, 12);
             this.bestUserDataGridView.Name = "bestUserDataGridView";
             this.bestUserDataGridView.RowHeadersWidth = 51;
             this.bestUserDataGridView.RowTemplate.Height = 24;
@@ -97,11 +97,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 450);
+            this.ClientSize = new System.Drawing.Size(926, 450);
             this.Controls.Add(this.bestUserDataGridView);
             this.Controls.Add(this.usersDataGridView);
             this.Name = "UserResultsForm";
-            this.Text = "UserResultsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Frogs";
             this.Load += new System.EventHandler(this.UserResultsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bestUserDataGridView)).EndInit();

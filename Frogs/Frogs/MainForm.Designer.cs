@@ -39,11 +39,11 @@
             this.rightFrogPictureBox3 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.правилаИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.новаяИграToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рекордыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.leftFrogPictureBox1 = new System.Windows.Forms.PictureBox();
-            this.правилаИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.rightFrogPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftFrogPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftFrogPictureBox3)).BeginInit();
@@ -81,10 +81,11 @@
             // stepCountLabel
             // 
             this.stepCountLabel.AutoSize = true;
-            this.stepCountLabel.Location = new System.Drawing.Point(83, 466);
+            this.stepCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.stepCountLabel.Location = new System.Drawing.Point(536, 200);
             this.stepCountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.stepCountLabel.Name = "stepCountLabel";
-            this.stepCountLabel.Size = new System.Drawing.Size(140, 17);
+            this.stepCountLabel.Size = new System.Drawing.Size(158, 17);
             this.stepCountLabel.TabIndex = 9;
             this.stepCountLabel.Text = "Количество ходов-0";
             // 
@@ -161,7 +162,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1244, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1248, 28);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,24 +177,31 @@
             this.менюToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.менюToolStripMenuItem.Text = "Меню";
             // 
+            // правилаИгрыToolStripMenuItem
+            // 
+            this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
+            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
+            this.правилаИгрыToolStripMenuItem.Click += new System.EventHandler(this.GameRoolsToolStripMenuItem_Click);
+            // 
             // новаяИграToolStripMenuItem
             // 
             this.новаяИграToolStripMenuItem.Name = "новаяИграToolStripMenuItem";
-            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.новаяИграToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.новаяИграToolStripMenuItem.Text = "Рестарт";
             this.новаяИграToolStripMenuItem.Click += new System.EventHandler(this.новаяИграToolStripMenuItem_Click);
             // 
             // рекордыToolStripMenuItem
             // 
             this.рекордыToolStripMenuItem.Name = "рекордыToolStripMenuItem";
-            this.рекордыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.рекордыToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.рекордыToolStripMenuItem.Text = "Рекорды";
             this.рекордыToolStripMenuItem.Click += new System.EventHandler(this.рекордыToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -208,18 +216,11 @@
             this.leftFrogPictureBox1.TabStop = false;
             this.leftFrogPictureBox1.Click += new System.EventHandler(this.FrogPictureBox_Click);
             // 
-            // правилаИгрыToolStripMenuItem
-            // 
-            this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
-            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
-            this.правилаИгрыToolStripMenuItem.Click += new System.EventHandler(this.GameRoolsToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 665);
+            this.ClientSize = new System.Drawing.Size(1248, 286);
             this.Controls.Add(this.stepCountLabel);
             this.Controls.Add(this.rightFrogPictureBox4);
             this.Controls.Add(this.rightFrogPictureBox3);
@@ -234,7 +235,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
-            this.Text = "Попрыгушки";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Frogs";
             this.Load += new System.EventHandler(this.MainForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.rightFrogPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftFrogPictureBox2)).EndInit();

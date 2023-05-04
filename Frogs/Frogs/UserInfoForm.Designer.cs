@@ -85,6 +85,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.OKbutton);
             this.Name = "UserInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frogs";
             this.ResumeLayout(false);
             this.PerformLayout();

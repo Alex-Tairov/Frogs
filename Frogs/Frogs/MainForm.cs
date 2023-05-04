@@ -172,7 +172,8 @@ namespace Frogs
 
         private void GameRoolsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Нужно переставить лягушки с одной стороны на другую");
+            MessageBox.Show("Для победы необходимо переставить лягушки с одной стороны на другую.\n\n" +
+                "Максимально возможный результат 24 хода.");
         }
     }
 }
