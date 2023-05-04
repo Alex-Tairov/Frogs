@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.rightFrogPictureBox4 = new System.Windows.Forms.PictureBox();
             this.leftFrogPictureBox2 = new System.Windows.Forms.PictureBox();
             this.stepCountLabel = new System.Windows.Forms.Label();
@@ -232,6 +233,7 @@
             this.Controls.Add(this.leftFrogPictureBox2);
             this.Controls.Add(this.leftFrogPictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
