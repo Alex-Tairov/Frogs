@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Frogs
@@ -35,11 +34,8 @@ namespace Frogs
 
         private void FrogPictureBox_Click(object sender, EventArgs e)
         {
-            
             var clickedPictureBox = (PictureBox)sender;
-
             var emptyLocationX = emptyPictureBox.Location.X;
-
             var distance = Math.Abs(clickedPictureBox.Location.X - emptyLocationX);
             var normalizedDistance = distance / emptyPictureBox.Size.Width;
 
@@ -71,7 +67,6 @@ namespace Frogs
                 (leftFrogPictureBox2.Location.X > emptyPictureBoxBeginLocationX) &&
                 (leftFrogPictureBox3.Location.X > emptyPictureBoxBeginLocationX) &&
                 (leftFrogPictureBox4.Location.X > emptyPictureBoxBeginLocationX);
-                       
         }
 
         private void ShowWin()
@@ -142,9 +137,6 @@ namespace Frogs
                 rightFrogLocation2= rightFrogPictureBox2.Location;
                 rightFrogLocation3= rightFrogPictureBox3.Location;
                 rightFrogLocation4= rightFrogPictureBox4.Location;
-
-
-
             }
             else
             {

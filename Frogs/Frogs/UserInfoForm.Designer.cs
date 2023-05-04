@@ -38,18 +38,19 @@
             // 
             this.OKbutton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.OKbutton.Enabled = false;
-            this.OKbutton.Location = new System.Drawing.Point(52, 330);
+            this.OKbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OKbutton.Location = new System.Drawing.Point(49, 164);
             this.OKbutton.Name = "OKbutton";
             this.OKbutton.Size = new System.Drawing.Size(75, 23);
             this.OKbutton.TabIndex = 0;
             this.OKbutton.Text = "OK";
             this.OKbutton.UseVisualStyleBackColor = true;
-           
             // 
             // button2
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(219, 330);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(216, 164);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -59,15 +60,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 62);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(99, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 17);
+            this.label1.Size = new System.Drawing.Size(146, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Введите ваше имя";
             // 
             // userTextBox
             // 
-            this.userTextBox.Location = new System.Drawing.Point(113, 181);
+            this.userTextBox.Location = new System.Drawing.Point(119, 99);
             this.userTextBox.Name = "userTextBox";
             this.userTextBox.Size = new System.Drawing.Size(100, 22);
             this.userTextBox.TabIndex = 3;
@@ -77,13 +79,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 450);
+            this.ClientSize = new System.Drawing.Size(368, 212);
             this.Controls.Add(this.userTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.OKbutton);
             this.Name = "UserInfoForm";
-            this.Text = "UserInfoForm";
+            this.Text = "Frogs";
             this.ResumeLayout(false);
             this.PerformLayout();
 
