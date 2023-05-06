@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Frogs
 {
     public partial class WinForm : Form
     {
-        public WinForm()
+        private UserName user;
+        public WinForm(UserName user)
         {
             InitializeComponent();
+            this.user = user;
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -24,7 +20,17 @@ namespace Frogs
 
         private void WinForm_Load(object sender, EventArgs e)
         {
+            resultScoreLabel.Text = user.score.ToString();
+        }
+
+        private void restartButton_Click(object sender, EventArgs e)
+        {
             
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

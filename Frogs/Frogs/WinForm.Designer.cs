@@ -33,6 +33,8 @@
             this.restartButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.finishResultTextLabel = new System.Windows.Forms.Label();
+            this.resultScoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,23 +53,25 @@
             // 
             this.restartButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.restartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.restartButton.Location = new System.Drawing.Point(36, 250);
+            this.restartButton.Location = new System.Drawing.Point(36, 307);
             this.restartButton.Name = "restartButton";
             this.restartButton.Size = new System.Drawing.Size(92, 34);
             this.restartButton.TabIndex = 2;
             this.restartButton.Text = "Заново";
             this.restartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
             // 
             // exitButton
             // 
             this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exitButton.Location = new System.Drawing.Point(161, 250);
+            this.exitButton.Location = new System.Drawing.Point(157, 307);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(90, 34);
             this.exitButton.TabIndex = 3;
             this.exitButton.Text = "Выход";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // label2
             // 
@@ -80,11 +84,32 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Победа!";
             // 
+            // finishResultTextLabel
+            // 
+            this.finishResultTextLabel.AutoSize = true;
+            this.finishResultTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.finishResultTextLabel.Location = new System.Drawing.Point(75, 246);
+            this.finishResultTextLabel.Name = "finishResultTextLabel";
+            this.finishResultTextLabel.Size = new System.Drawing.Size(120, 17);
+            this.finishResultTextLabel.TabIndex = 5;
+            this.finishResultTextLabel.Text = "Ваш результат";
+            // 
+            // resultScoreLabel
+            // 
+            this.resultScoreLabel.AutoSize = true;
+            this.resultScoreLabel.Location = new System.Drawing.Point(119, 272);
+            this.resultScoreLabel.Name = "resultScoreLabel";
+            this.resultScoreLabel.Size = new System.Drawing.Size(43, 17);
+            this.resultScoreLabel.TabIndex = 6;
+            this.resultScoreLabel.Text = "result";
+            // 
             // WinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 300);
+            this.ClientSize = new System.Drawing.Size(281, 367);
+            this.Controls.Add(this.resultScoreLabel);
+            this.Controls.Add(this.finishResultTextLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.restartButton);
@@ -107,5 +132,7 @@
         private System.Windows.Forms.Button restartButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label finishResultTextLabel;
+        private System.Windows.Forms.Label resultScoreLabel;
     }
 }

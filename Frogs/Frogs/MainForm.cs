@@ -56,7 +56,7 @@ namespace Frogs
             if (IsWin())
             {
                 game.SaveResult();
-                ShowWin();
+                ShowWin(user);
             }
         }
 
@@ -69,9 +69,9 @@ namespace Frogs
                 (leftFrogPictureBox4.Location.X > emptyPictureBoxBeginLocationX);
         }
 
-        private void ShowWin()
+        private void ShowWin(UserName user)
         {
-            var winForm = new WinForm();
+            var winForm = new WinForm(user);
             if (winForm.ShowDialog(this) == DialogResult.OK)
             {
                 SwapLocations();
